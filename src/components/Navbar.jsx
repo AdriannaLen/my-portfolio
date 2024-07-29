@@ -2,12 +2,16 @@ import { useState } from'react'
 import { navLinks } from '../constants'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
+import github from '../assets/github.svg'
+import linkedin from '../assets/linkedin.svg'
 
 const Navbar = () => {
   const [toggle, setToggle ] = useState(false)
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
+    <a href="https://github.com/AdriannaLen" className="p-7"><img src={github} alt="github" className="w-10 h-10 object-contain" /></a>
+    <a href="https://www.linkedin.com/in/adrianna-lenczewska-276185287/"><img src={linkedin} alt="linkedin" className="w-15 h-15 object-contain" /></a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
