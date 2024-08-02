@@ -12,15 +12,9 @@ const AboutMe = () => {
     </h2>
   </div>
       <div className="flex flex-col items-center lg:flex-row lg:justify-around">
-        <p className="font-poppins mt-20 text-center text-gray-800 text-lg sm:text-xl leading-relaxed space-y-4 p-6 rounded-lg transition-transform duration-500 hover:scale-105">
-          I am an experienced subcontracting buyer with 7 years of experience.<br className="hidden sm:block" />
-          This role honed my negotiation skills,<br className="hidden sm:block" />
-          relationship management, and precise planning abilities.<br className="hidden sm:block" />
-          In the meantime, I began studying front-end development<br className="hidden sm:block" />
-          through Udemy. I acquire knowledge from online courses,<br className="hidden sm:block" />
-          video tutorials, and my studies at Software Academy.<br className="hidden sm:block" />
-          I am highly motivated, a quick learner, and excel at problem-solving.<br className="hidden sm:block" />
-          My superpower is combining attention to detail with creativity.
+        <p className="font-poppins mt-20 text-center w-[50%] text-gray-800 text-lg sm:text-xl leading-relaxed space-y-4 p-6 rounded-lg transition-transform duration-500 hover:scale-105">
+        With 7 years of experience as a subcontracting buyer in an international organization, I have honed my negotiation skills, relationship management, and precise planning abilities. My role required a high level of attention to detail and strategic thinking, allowing me to manage complex projects and secure favorable terms. Additionally, my strong communication skills and fluency in English have enabled me to build effective working relationships within multicultural organizations. I am confident that my background and skills make me an excellent fit for the buyer position you are seeking to fill. I am eager to contribute to your team and help achieve your organization’s goals.
+
         </p>
         {/* Dodaj zdjęcie lub grafikę */}
         <img 
