@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe.jsx'
-import Projects from './components/Projects.jsx'
+import Projects from './components/Apps.jsx'
 import styles from './style.js'
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
       </div>
     </div>
     </div>
-    <div className=" w-full overflow-hidden">
+    <div className="w-full overflow-hidden">
      <AboutMe />
      </div>
      <Projects />
