@@ -2,15 +2,21 @@ import { projects } from '../constants';
 
 const Apps = () => {
   return (
-    <div>
-      <ul>
+    <div className="container mx-auto p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {projects.map((project) => (
-          <li key={project.id}>
-            {project.title && <h2>{project.title}</h2>}
-            {project.link && <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">{project.link}</a>}
-          </li>
+          <div key={project.id} className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow">
+            {project.title && <h2 className="text-xl font-semibold mb-2">{project.title}</h2>}
+            {project.link ? (
+              <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                {project.link}
+              </a>
+            ) : (
+              <span className="text-gray-500">No link available</span>
+            )}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
