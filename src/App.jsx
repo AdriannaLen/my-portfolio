@@ -6,7 +6,7 @@ import styles from './style.js'
 const App = () => {
   return (
     <>
-    <div className=" w-full overflow-hidden">
+    <div className=" bg-slate-200 w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
