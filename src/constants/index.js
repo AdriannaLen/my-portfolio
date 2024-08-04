@@ -1,3 +1,5 @@
+import employeeAppImage from '../assets/employee-app.svg'
+
 export const navLinks = [
     {
       id: "aboutme",
@@ -26,7 +28,7 @@ export const navLinks = [
         id: "project1",
         title: "Employeee Management System",
         link: "employee-app-three.vercel.app",
-        photo: ""
+        photo: employeeAppImage
     },
     {
         id: "project2",
