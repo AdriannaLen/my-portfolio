@@ -1,4 +1,11 @@
 import employeeAppImage from '../assets/employee-app.svg'
+import css from '../assets/css.svg'
+import html from '../assets/html.svg'
+import sass from '../assets/sass.svg'
+import react from '../assets/react.svg'
+import typescript from '../assets/typescript.svg'
+import javascript from '../assets/javascript.svg'
+import tailwind from '../assets/tailwind.svg'
 
 export const navLinks = [
     {
@@ -9,10 +16,10 @@ export const navLinks = [
       id: "projects",
       title: "Projects",
     },
-    {
-      id: "carieer",
-      title: "Carieer",
-    },
+    // {
+    //   id: "carieer",
+    //   title: "Carieer",
+    // },
     {
         id: "technologies",
         title: "Technologies",
@@ -69,3 +76,42 @@ export const navLinks = [
       description: "Promoted to lead developer at XYZ Ltd.",
     },
   ];
+
+  export const technologies = [
+    {
+      id: 1,
+      img: html,
+      name: 'html',
+    },
+    {
+      id: 2,
+      img: css,
+      name: 'css',
+    },
+    {
+      id: 3,
+      img: sass,
+      name: 'sass',
+    },
+    {
+      id: 4,
+      img: javascript,
+      name: 'javascript',
+    },
+    {
+      id: 5,
+      img: react,
+      name: 'react',
+    },
+    {
+      id: 6,
+      img: typescript,
+      name: 'typescript',
+    },
+    {
+      id: 7,
+      img: tailwind,
+      name: 'tailwind',
+    },
+
+  ]

@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Apps.jsx'
-import Carieer from './components/Carieer.jsx'
+// import Carieer from './components/Carieer.jsx'
 import styles from './style.js'
+import Technologies from './components/Technologies.jsx'
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
      <AboutMe />
      </div>
      <Projects />
-     <Carieer />
+     {/* <Carieer /> */}
+     <Technologies />
      </>
   )
 }
