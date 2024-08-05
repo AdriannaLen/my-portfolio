@@ -4,6 +4,7 @@ import Projects from './components/Apps.jsx'
 // import Carieer from './components/Carieer.jsx'
 import styles from './style.js'
 import Technologies from './components/Technologies.jsx'
+import Contact from './components/Contact.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
      <Projects />
      {/* <Carieer /> */}
      <Technologies />
+     <Contact />
      </>
   )
 }
