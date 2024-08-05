@@ -3,7 +3,7 @@ import { projects } from '../constants';
 const Apps = () => {
   return (
     <div id="projects" className="h-[100vh] container mx-auto my-12 p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div key={project.id} className="border rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow">
             {/* {project.title && <h2 className="text-xl font-semibold mb-2">{project.title}</h2>} */}

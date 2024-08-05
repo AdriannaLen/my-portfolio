@@ -21,10 +21,10 @@ export const navLinks = [
     //   id: "carieer",
     //   title: "Carieer",
     // },
-    {
-        id: "technologies",
-        title: "Technologies",
-      },
+    // {
+    //     id: "technologies",
+    //     title: "Technologies",
+    //   },
     {
       id: "contact",
       title: "Contact",
