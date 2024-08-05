@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Apps.jsx'
+import Carieer from './components/Carieer.jsx'
 import styles from './style.js'
 
 const App = () => {
@@ -13,10 +14,11 @@ const App = () => {
       </div>
     </div>
     </div>
-    <div className="w-full overflow-hidden">
+    <div className="w-full h-full md:h-[70vh] bg-slate-800 overflow-hidden">
      <AboutMe />
      </div>
      <Projects />
+     <Carieer />
      </>
   )
 }

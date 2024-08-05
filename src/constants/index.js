@@ -46,3 +46,26 @@ export const navLinks = [
         link: ""
     }
   ]
+
+  export const careerTimeline = [
+    {
+      year: "2020",
+      title: "Started First Job",
+      description: "Began working as a junior developer at ABC Corp.",
+    },
+    {
+      year: "2021",
+      title: "Promotion",
+      description: "Promoted to mid-level developer at ABC Corp.",
+    },
+    {
+      year: "2022",
+      title: "Switched Jobs",
+      description: "Joined XYZ Ltd as a senior developer.",
+    },
+    {
+      year: "2023",
+      title: "Lead Developer",
+      description: "Promoted to lead developer at XYZ Ltd.",
+    },
+  ];
