@@ -12,7 +12,7 @@ const AboutMe = () => {
     </h2>
   </div>
       <div className="flex flex-col items-center lg:flex-row lg:justify-around">
-        <p className="font-poppins mt-20 text-center w-[45%] text-dimWhite text-lg sm:text-xl leading-relaxed space-y-4 p-6 rounded-lg transition-transform duration-500 hover:scale-105">
+        <p className="font-poppins mt-20 text-center w-[45%] text-dimWhite text-lg sm:text-xl leading-relaxed space-y-4 p-6 rounded-lg transition-transform duration-500 hover:scale-105 animate-fadeIn">
         I am an experienced subcontracting buyer with 7 years of experience within international organization. This role
  honed my negotiation skills, relationship management, and precise planning abilities as well as attention to
  details. It helped understand IT environment and get to know the role of developers as I’ve been contracting

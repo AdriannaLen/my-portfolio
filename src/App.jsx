@@ -5,6 +5,7 @@ import Projects from './components/Apps.jsx'
 import styles from './style.js'
 import Technologies from './components/Technologies.jsx'
 import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
      {/* <Carieer /> */}
      <Technologies />
      <Contact />
+     <Footer />
      </>
   )
 }

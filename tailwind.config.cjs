@@ -3,6 +3,7 @@ export const content = ["./index.html", "./src/**/*.{js,jsx}"];
 export const mode = "jit";
 export const theme = {
   extend: {
+    
     colors: {
       primary: "#00040f",
       secondary: "#00f6ff",
@@ -21,5 +22,15 @@ export const theme = {
     lg: "1200px",
     xl: "1700px",
   },
+  keyframes: {
+    fadeIn: {
+      '0%': { opacity: 0 },
+      '100%': { opacity: 1 },
+    },
+  },
+  animation: {
+    fadeIn: 'fadeIn 2s ease-in-out',
+  },
+  
 };
 export const plugins = [];
