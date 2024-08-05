@@ -8,8 +8,9 @@ import javascript from '../assets/javascript.svg'
 import tailwind from '../assets/tailwind.svg'
 
 export const navLinks = [
+   
     {
-      id: "aboutme",
+      id: "me",
       title: "About Me",
     },
     {

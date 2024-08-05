@@ -2,7 +2,7 @@ import { careerTimeline } from '../constants';
 
 const Carieer = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="h-[100vh] container mx-auto p-4">
       <div className="relative border-l border-gray-200 dark:border-gray-700">
         {careerTimeline.map((event, index) => (
           <div key={index} className="mb-10 ml-6">

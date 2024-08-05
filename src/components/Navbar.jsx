@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle ] = useState(false)
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar">
     <h1 className="text-slate-800 text-[24px] mr-20"><b>my</b>PORTFOLIO</h1>
     <a href="https://github.com/AdriannaLen" className="hide-on-mobile p-7"><img src={github} alt="github" className="w-10 h-10 object-contain" /></a>
     <a href="https://www.linkedin.com/in/adrianna-lenczewska-276185287/" className="hide-on-mobile"><img src={linkedin} alt="linkedin" className="w-15 h-15 object-contain" /></a>
