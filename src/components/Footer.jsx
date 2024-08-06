@@ -2,8 +2,8 @@ import { navLinks } from '../constants'
 
 const Footer = () => {
   return (
-    <div className="bg-slate-200">
-       <ul className="list-none sm:flex hidden h-[20vh] mx-8 justify-center items-center flex-1">
+    <div className="bg-slate-200 text-center">
+       <ul className="list-none sm:flex hidden mx-8 justify-center items-center">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -15,6 +15,7 @@ const Footer = () => {
           </li>
         ))}
         </ul>
+        <div className="font-poppins pb-8">Powered by <a href="https://www.qubit.cm/">qubit.cm</a></div>
     </div>
   )
 }

@@ -1,51 +1,48 @@
 const Contact = () => {
   return (
-    <div id="contact" className="bg-slate-800 h-[100vh] flex-row flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
-        <h2 className="text-2xl font-semibold text-center text-gray-800 mb-6">Contact Me</h2>
-        <form className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700" htmlFor="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-slate-500 focus:border-slate-500"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700" htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-slate-500 focus:border-slate-500"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700" htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              rows="4"
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-slate-500 focus:border-slate-500"
-              placeholder="Your Message"
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="w-full py-2 px-4 bg-slate-800 text-white font-semibold rounded-md shadow hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
-            >
-              Send Message
+    <div id="contact" className="bg-white h-[80vh] flex justify-center items-center relative py-16">
+      <div className="flex flex-col sm:flex-row justify-between items-start w-full max-w-6xl p-4 sm:p-8">
+        {/* Formularz kontaktowy */}
+        <div className="w-full sm:w-1/2 max-w-lg flex-shrink-0 relative z-10">
+          <form className="bg-white p-8 border w-full h-auto shadow-lg relative sm:-top-16">
+            <h1 className="text-2xl font-bold text-center">Kontakt</h1>
+            <div className="flex flex-col mt-6">
+              <label className="mb-2 text-sm font-medium">Imię</label>
+              <input type="text" className="p-3 border rounded-lg" required />
+            </div>
+            <div className="flex flex-col mt-4">
+              <label className="mb-2 text-sm font-medium">Email</label>
+              <input type="email" className="p-3 border rounded-lg" required />
+            </div>
+            <div className="flex flex-col mt-4">
+              <label className="mb-2 text-sm font-medium">Wiadomość</label>
+              <textarea className="p-3 border rounded-lg" rows="4" required></textarea>
+            </div>
+            <div className="flex items-center mt-4">
+              <input type="checkbox" className="mr-2" required />
+              <label className="text-sm">Zgadzam się na <a href="#" className="text-blue-500">politykę prywatności</a></label>
+            </div>
+            <button type="submit" className="w-full bg-slate-500 text-white p-3 rounded-lg font-bold hover:bg-slate-800 transition duration-300 mt-4">
+              Wyślij
             </button>
+          </form>
+        </div>
+
+        {/* Dane kontaktowe */}
+        <div className="w-full sm:w-1/2 max-w-lg flex-shrink-0 mt-8 sm:mt-0 text-center">
+          <div className="p-8 font-poppins bg-white border h-full shadow-lg">
+            <p className="mb-2 text-[32px]"><strong>Kontakt</strong></p>
+            <p className="mb-2"><strong>Adrianna Lenczewska</strong></p>
+            <p className="mb-2"><strong>ul.Gdańska, Więcbork 89-410</strong></p>
+            <p className="mb-2"><strong>+48 669 961 266</strong></p>
+            <p className="mb-2"><strong>info@example.com</strong></p>
+            <p>Jeżeli masz jakieś pytanie, możesz skontaktować się ze mną za pomocą formularza!</p>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default Contact;
