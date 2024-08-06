@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <div id="contact" className="bg-white h-[80vh] flex justify-center items-center relative py-16">
+    <div id="contact" className="bg-white min-h-screen sm:h-[80vh] flex justify-center items-center relative py-16">
       <div className="flex flex-col sm:flex-row justify-between items-start w-full max-w-6xl p-4 sm:p-8">
         {/* Formularz kontaktowy */}
         <div className="w-full sm:w-1/2 max-w-lg flex-shrink-0 relative z-10">
-          <form className="bg-white p-8 border w-full h-auto shadow-lg relative sm:-top-16">
+          <form className="bg-white p-8 border w-full h-auto relative sm:-top-16">
             <h1 className="text-2xl font-bold text-center">Kontakt</h1>
             <div className="flex flex-col mt-6">
               <label className="mb-2 text-sm font-medium">Imię</label>
@@ -29,8 +29,8 @@ const Contact = () => {
         </div>
 
         {/* Dane kontaktowe */}
-        <div className="w-full sm:w-1/2 max-w-lg flex-shrink-0 mt-8 sm:mt-0 text-center">
-          <div className="p-8 font-poppins bg-white border h-full shadow-lg">
+        <div className="w-full sm:w-1/2 max-w-lg flex-shrink-0 text-center">
+          <div className="p-8 font-poppins bg-white border h-full">
             <p className="mb-2 text-[32px]"><strong>Kontakt</strong></p>
             <p className="mb-2"><strong>Adrianna Lenczewska</strong></p>
             <p className="mb-2"><strong>ul.Gdańska, Więcbork 89-410</strong></p>
