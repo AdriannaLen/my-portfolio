@@ -6,6 +6,7 @@ import styles from './style.js'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Me from './components/Me.jsx'
+import Banner from './components/Banner.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
      <Me />
      <Projects />
      {/* <Carieer /> */}
+     <Banner />
      <Contact />
      <Footer />
      </>
