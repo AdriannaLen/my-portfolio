@@ -2,7 +2,7 @@ import { navLinks } from '../constants'
 
 const Footer = () => {
   return (
-    <div className="bg-slate-200 text-center py-8 flex flex-col sm:flex-row justify-around">
+    <div className="bg-slate-200 text-center py-8 flex flex-col sm:flex-row justify-around border-t border-black">
       <div className="font-poppins">Powered by <a href="https://www.qubit.cm/">qubit.cm</a></div>
        <ul className="list-none sm:flex mx-8 justify-center items-center">
         {navLinks.map((nav) => (
