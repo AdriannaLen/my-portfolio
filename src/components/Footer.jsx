@@ -2,6 +2,7 @@ import { navLinks } from '../constants'
 
 const Footer = () => {
   return (
+    <>
     <div className="bg-slate-200 text-center py-8 flex flex-col sm:flex-row justify-around border-t border-black">
       <div className="font-poppins">Powered by <a href="https://www.qubit.cm/">qubit.cm</a></div>
        <ul className="list-none sm:flex mx-8 justify-center items-center">
@@ -17,6 +18,11 @@ const Footer = () => {
         ))}
         </ul>
     </div>
+    <div className="font-poppins bg-slate-200 text-center flex flex-col sm:flex-row justify-around sm:-ml-20">
+    <p>Copyright © 2022 <a href="https://www.adcode.it">adcode.it</a></p>
+    <p>Polityka prywatności</p>
+  </div>
+  </>
   )
 }
 
