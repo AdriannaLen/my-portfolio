@@ -15,13 +15,13 @@ const Contact = () => {
         <p className="mb-2">+48 669 961 266</p>
         <p className="mb-2">adriannalenn@gmail.com</p>
         <p>Jeżeli masz jakieś pytanie, możesz skontaktować się ze mną za pomocą formularza!</p>
-        <span className="flex flex-row justify-center py-6">
+        <span className="flex flex-row justify-start py-6">
         <a href="https://github.com/AdriannaLen" className="hide-on-mobile"><img src={github} alt="github" className="object-contain w-[44px]" /></a>
         <a href="https://www.linkedin.com/in/adrianna-lenczewska-276185287/" className="hide-on-mobile"><img src={linkedin} alt="linkedin" className="object-contain" /></a>
         </span>
       </div>
     </div>
-    <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 ml-56 lg:left-0 top-0"></div>
+    <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 ml-52 lg:left-0 top-0"></div>
     {/* Formularz kontaktowy */}
     <div className="w-full sm:w-1/2 flex-shrink-0 relative z-10 -mt-24 sm:-mt-48 sm-mr-8">
       <form className="bg-white p-8 border w-full h-auto relative">

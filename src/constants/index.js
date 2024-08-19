@@ -1,4 +1,5 @@
 import employeeAppImage from '../assets/employee-app.svg'
+import letsPackImage from '../assets/lets-pack.jpg'
 import css from '../assets/css.svg'
 import html from '../assets/html.svg'
 import sass from '../assets/sass.svg'
@@ -41,7 +42,8 @@ export const navLinks = [
     {
         id: "project2",
         title: "Far Away",
-        link: ""
+        link: "lets-pack-pi.vercel.app",
+        photo:letsPackImage
     },
     {
         id: "project3",
