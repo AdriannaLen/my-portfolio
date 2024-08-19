@@ -12,7 +12,9 @@ export const theme = {
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      greatVibes: ["Great Vibes", "cursive"], 
     },
+    
   },
   screens: {
     xs: "480px",

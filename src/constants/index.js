@@ -7,6 +7,7 @@ import react from '../assets/react.svg'
 import typescript from '../assets/typescript.svg'
 import javascript from '../assets/javascript.svg'
 import tailwind from '../assets/tailwind.svg'
+import qubit from '../assets/qubit.png'
 
 export const navLinks = [
    
@@ -34,6 +35,12 @@ export const navLinks = [
 
   export const projects = [
     {
+      id: "project3",
+      title: "Qubit",
+      link: "www.qubit.cm",
+      photo: qubit
+  },
+    {
         id: "project1",
         title: "Employeee Management System",
         link: "employee-app-three.vercel.app",
@@ -45,16 +52,6 @@ export const navLinks = [
         link: "lets-pack-pi.vercel.app",
         photo:letsPackImage
     },
-    {
-        id: "project3",
-        title: "Steps",
-        link: ""
-    },
-    {
-        id: "project4",
-        title: "",
-        link: ""
-    }
   ]
 
   export const careerTimeline = [
