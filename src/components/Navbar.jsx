@@ -1,16 +1,34 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { navLinks } from '../constants'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
-import scrollTop from '../assets/icons8-scroll-up-gradient-96.png'
-import scrollTopMobile from '../assets/icons8-scroll-up-gradient-32.png'
+import scrollTop from '../assets/icons8-scroll-up-96.png'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleToggle = () => setToggle(prev => !prev)
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Funkcja sprawdzająca pozycję przewijania
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Nasłuchuj zdarzenia przewijania
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -70,13 +88,15 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <button 
-        onClick={scrollToTop}
-        className="fixed bottom-6 right-6 p-3rounded-full transition-colors duration-300 z-[100]"
-        aria-label="Scroll to Top"
-      >
-        <img src={scrollTop} alt="Scroll to Top" className="object-contain" />
-      </button>
+      {isVisible && (
+        <button 
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 rounded-full transition-colors duration-300 z-[100]"
+          aria-label="Scroll to Top"
+        >
+          <img src={scrollTop} alt="Scroll to Top" className="object-contain w-16 h-16" />
+        </button>
+      )}
     </nav>
   )
 }
