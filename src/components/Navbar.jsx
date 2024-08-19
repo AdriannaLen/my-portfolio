@@ -4,11 +4,20 @@ import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
+import scrollTop from '../assets/icons8-scroll-up-gradient-96.png'
+import scrollTopMobile from '../assets/icons8-scroll-up-gradient-32.png'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   const handleToggle = () => setToggle(prev => !prev)
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Umożliwia płynne przewijanie
+    });
+  };
 
   return (
     <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar">
@@ -61,6 +70,13 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <button 
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 p-3rounded-full transition-colors duration-300 z-[100]"
+        aria-label="Scroll to Top"
+      >
+        <img src={scrollTop} alt="Scroll to Top" className="object-contain" />
+      </button>
     </nav>
   )
 }
