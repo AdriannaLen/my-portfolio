@@ -18,7 +18,7 @@ const Footer = () => {
         ))}
         </ul>
     </div>
-    <div className="font-poppins bg-slate-200 text-center flex flex-col sm:flex-row justify-around sm:-ml-20">
+    <div className="font-poppins pb-8 bg-slate-200 text-center flex flex-col sm:flex-row justify-around sm:-ml-20">
     <p>Copyright © 2022 <a href="https://www.adcode.it">adcode.it</a></p>
     <p>Polityka prywatności</p>
   </div>
