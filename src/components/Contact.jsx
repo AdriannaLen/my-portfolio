@@ -8,8 +8,8 @@ const Contact = () => {
   <div className="flex flex-col sm:flex-row justify-between items-start w-full max-w-6xl p-4 sm:p-8">
     {/* Dane kontaktowe */}
     <div className="w-full sm:w-1/2 flex-shrink-0 text-start mt-8 sm:mt-0">
-      <div className="p-8 font-poppins bg-white h-full">
-        <p className="mb-2 text-[46px]">Kontakt</p>
+      <div className="p-8 font-poppins bg-white h-full text-lg">
+        <p className="mb-5 text-[46px]">Kontakt</p>
         <p className="mb-2">Adrianna Lenczewska</p>
         <p className="mb-2">ul.Gdańska, Więcbork 89-410</p>
         <p className="mb-2">+48 669 961 266</p>
