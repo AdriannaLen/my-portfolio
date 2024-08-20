@@ -19,10 +19,6 @@ const AboutMe = () => {
   <h1 className="text-[1.5rem] sm:text-[3rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
     Adrianna Lenczewska
   </h1>
-  <div className="hidden sm:block h-[1.5rem] sm:h-[2rem] border-r-[0.25rem] border-dimWhite"></div>
-  <h2 className="text-[1.5rem] sm:text-[3rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
-    Front End Developer
-  </h2>
 </div>
 
 <div className="w-full overflow-x-auto mt-[1rem]">
@@ -34,6 +30,9 @@ const AboutMe = () => {
     ))}
   </ul>
 </div>
+<h2 className="text-[1.5rem] sm:text-[3rem] text-center uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
+    Front End Developer
+  </h2>
     </div>
   );
 };
