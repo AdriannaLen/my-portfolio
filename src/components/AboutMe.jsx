@@ -16,11 +16,11 @@ const AboutMe = () => {
   </div>
 </div>
 <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-[1rem]">
-  <h1 className="text-[1.5rem] sm:text-[2.625rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
+  <h1 className="text-[1.5rem] sm:text-[3rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
     Adrianna Lenczewska
   </h1>
   <div className="hidden sm:block h-[1.5rem] sm:h-[2rem] border-r-[0.25rem] border-dimWhite"></div>
-  <h2 className="text-[1.5rem] sm:text-[2.625rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
+  <h2 className="text-[1.5rem] sm:text-[3rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
     Front End Developer
   </h2>
 </div>

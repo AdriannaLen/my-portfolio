@@ -25,9 +25,9 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 ml-52 lg:left-0 top-0"></div>
+      <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 left-[15%] sm:left-[15%] lg:left-[15%] top-0"></div>
       {/* Formularz kontaktowy */}
-      <div className="w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative z-10 -translate-y-[25%] sm:mr-8">
+      <div className="w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative z-10 -translate-y-[25%] sm:mr-8 lg:mr-[25%]">
         <form className="bg-white p-8 border w-full h-auto relative">
           <div className="flex flex-col mt-6">
             <label className="mb-2 text-sm font-medium">Imię</label>
