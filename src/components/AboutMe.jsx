@@ -16,13 +16,17 @@ const AboutMe = () => {
   </div>
 </div>
 <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-[1rem]">
-  <h1 className="text-[1.5rem] sm:text-[3rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
+  <h1 className="text-[1.5rem] sm:text-[2.625rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 hover:scale-105 animate-fadeIn">
     Adrianna Lenczewska
   </h1>
+  <div className="hidden sm:block h-[1.5rem] sm:h-[2rem] border-r-[0.25rem] border-dimWhite"></div>
+  <h2 className="text-[1.5rem] sm:text-[2.625rem] uppercase tracking-wide text-dimWhite transition-transform duration-500 hover:scale-105 animate-fadeIn">
+    Front End Developer
+  </h2>
 </div>
 
 <div className="w-full overflow-x-auto mt-[1rem]">
-  <ul className="flex justify-center sm:justify-center space-x-[1rem] animate-fadeIn">
+  <ul className="flex justify-center sm:justify-center pt-[1.5rem] sm:space-x-[6rem] animate-fadeIn">
     {technologies.map((tech) => (
       <li key={tech.id} className="flex-shrink-0">
         <img src={tech.img} alt={tech.name} className="w-[2.5rem] h-[2.5rem] sm:w-[4rem] sm:h-[4rem]" />
@@ -30,9 +34,6 @@ const AboutMe = () => {
     ))}
   </ul>
 </div>
-<h2 className="text-[1.5rem] sm:text-[3rem] text-center uppercase tracking-wide text-dimWhite transition-transform duration-500 animate-fadeIn">
-    Front End Developer
-  </h2>
     </div>
   );
 };
