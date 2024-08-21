@@ -14,7 +14,8 @@ export const theme = {
        dustyBlue: "#748DA6",
        lightCoral: "#ac867a",
        lightPeach: "#ede9e3",
-       text: "#736457"
+       text: "#736457",
+       brown: "#4B3621"
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

@@ -34,7 +34,7 @@ const Me = () => {
         </div>
         <button
           type="submit"
-          className="w-auto inline-block bg-lightCoral text-white p-4 rounded-2xl font-bold hover:bg-customBlue transition duration-300 mt-32 text-sm sm:text-base"
+          className="w-auto inline-block bg-lightCoral text-white p-4 rounded-2xl font-bold  hover:text-brown hover:bg-primary transition duration-300 mt-32 text-sm sm:text-base"
         >
           <a href="#contact">Want to get in touch? Click</a>
         </button>
