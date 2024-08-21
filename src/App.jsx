@@ -11,7 +11,7 @@ import Banner from './components/Banner.jsx'
 const App = () => {
   return (
     <>
-    <div className=" bg-white w-full overflow-hidden">
+    <div className=" bg-whitePeach w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />

@@ -9,13 +9,12 @@ export const theme = {
       secondary: "#00f6ff",
       white: "rgba(255, 255, 255)",
       dimWhite: "rgba(255, 255, 255, 0.7)",
-      dimBlue: "rgba(9, 151, 124, 0.1)",
-       customBlue: '#5FA1C7',
        coolGrey: "#91A1AB",
-       paleSky: "#CAD7DF",
+       paleSky: "#c5bcb4",
        dustyBlue: "#748DA6",
-       deepBlue: "#00274D",
-       lightPeach: "#F9F5E8"
+       lightCoral: "#ac867a",
+       lightPeach: "#ede9e3",
+       text: "#736457"
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
