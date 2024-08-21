@@ -42,9 +42,6 @@ const Navbar = () => {
       id="navigation"
       className="w-full flex py-6 justify-between items-center navbar bg-lightPeach"
     >
-      <h1 className=" text-text text-[1rem] sm:text-[1.5rem] mr-20">
-        <b>ad</b>CODE
-      </h1>
       <a href="https://github.com/AdriannaLen" className="hidden md:block p-7">
         <img src={github} alt="github" className="w-10 h-10 object-contain" />
       </a>
