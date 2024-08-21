@@ -13,6 +13,9 @@ const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
+  const handleLinkClick = () => {
+    setToggle(false);
+  };
   // Funkcja sprawdzająca pozycję przewijania
   const handleScroll = () => {
     if (window.scrollY > 10) {
@@ -36,6 +39,7 @@ const Navbar = () => {
       behavior: 'smooth' // Umożliwia płynne przewijanie
     });
   };
+
 
   return (
     <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar">
@@ -72,9 +76,9 @@ const Navbar = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} text-slate-700`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0 border-b' : 'mb-4 border-b'} border-slate-900 w-full text-center text-slate-700`}
               >
-                <a href={`#${nav.id}`}>
+                <a href={`#${nav.id}`} onClick={handleLinkClick}>
                   {nav.title}
                 </a>
               </li>
