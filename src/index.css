@@ -9,8 +9,24 @@
     scroll-behavior: smooth;
   }
 
+
   @media (max-width: 768px) {
     .hide-on-mobile {
         display: none;
     }
+}
+
+
+/* Styl dla tabletów */
+@media (min-width: 768px) {
+  body {
+      max-width: 768px;
+  }
+}
+
+/* Styl dla desktopów */
+@media (min-width: 1440px) {
+  body {
+      max-width: 1920px;
+  }
 }

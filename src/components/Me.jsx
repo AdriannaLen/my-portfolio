@@ -9,9 +9,9 @@ const Me = () => {
         <h2 className="font-greatVibes text-slate-800 text-[2rem] sm:text-[2.5rem] lg:text-[3rem]">
           Hi !
         </h2>
-        <p className="font-poppins mt-0 w-full lg:w-[40%] text-black text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.125rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
-          I'm an experienced subcontracting buyer with 7 years of experience within international organization. This role honed my negotiation skills, relationship management, and precise planning abilities as well as attention to details. It helped me to understand IT environment and the role of developers. In pursuit of a career change, I began studying front-end development through Udemy and graduated Software Development Academy school. I began building small projects as a freelance. I am highly motivated, a quick learner, and excel at problem-solving. My superpower is combining attention to detail with creativity.
-        </p>
+        <p className="font-poppins mt-0 w-full sm:w-full lg:w-[40%] text-black text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.125rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
+  I'm an experienced subcontracting buyer with 7 years of experience within international organization. This role honed my negotiation skills, relationship management, and precise planning abilities as well as attention to details. It helped me to understand IT environment and the role of developers. In pursuit of a career change, I began studying front-end development through Udemy and graduated Software Development Academy school. I began building small projects as a freelance. I am highly motivated, a quick learner, and excel at problem-solving. My superpower is combining attention to detail with creativity.
+</p>
         <ul className="font-poppins w-full lg:w-[40%] text-black text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.125rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
           <h2 className="font-poppins text-slate-800 text-[1.5rem] sm:text-[2rem] lg:text-[2.5rem]">
             Education
