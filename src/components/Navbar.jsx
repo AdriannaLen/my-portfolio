@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar">
-      <h1 className="text-slate-800 text-[24px] mr-20"><b>ad</b>CODE</h1>
+      <h1 className="text-slate-800 text-[1rem] sm:text-[1.5rem] mr-20"><b>ad</b>CODE</h1>
       <a href="https://github.com/AdriannaLen" className="hide-on-mobile p-7">
         <img src={github} alt="github" className="w-10 h-10 object-contain" />
       </a>
@@ -68,12 +68,6 @@ const Navbar = () => {
         <div
           className={`fixed top-0 right-0 w-full h-auto bg-slate-200 p-6 transition-transform duration-300 ${toggle ? 'translate-y-0' : '-translate-y-full'} z-40`}
         >
-          <img 
-            src={close} 
-            alt="close" 
-            className="w-[28px] h-[28px] object-contain absolute top-6 right-6 cursor-pointer z-50"
-            onClick={handleToggle}
-          />
           <ul className="list-none flex flex-col justify-center items-center flex-1 h-full">
             {navLinks.map((nav, index) => (
               <li

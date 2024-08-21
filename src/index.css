@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
   @media (max-width: 768px) {
     .hide-on-mobile {
@@ -20,7 +24,7 @@
 /* Styl dla tabletów */
 @media (min-width: 768px) {
   body {
-      max-width: 768px;
+      max-width: 1280px;
   }
 }
 
