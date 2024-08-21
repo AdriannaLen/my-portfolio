@@ -1,21 +1,18 @@
-import { useState, useEffect } from 'react'
-import { navLinks } from '../constants'
-import menu from '../assets/menu.svg'
-import close from '../assets/close.svg'
-import github from '../assets/github.svg'
-import linkedin from '../assets/linkedin.svg'
-import scrollTop from '../assets/icons8-scroll-up-96.png'
+import { useState, useEffect } from 'react';
+import { navLinks } from '../constants';
+import menu from '../assets/menu.svg';
+import close from '../assets/close.svg';
+import github from '../assets/github.svg';
+import linkedin from '../assets/linkedin.svg';
+import slideUp from '../assets/slide-up.png';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
-
-  const handleToggle = () => setToggle(prev => !prev)
-
+  const [toggle, setToggle] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleLinkClick = () => {
-    setToggle(false);
-  };
+  const handleToggle = () => setToggle(prev => !prev);
+  const handleLinkClick = () => setToggle(false);
+
   // Funkcja sprawdzająca pozycję przewijania
   const handleScroll = () => {
     if (window.scrollY > 10) {
@@ -40,9 +37,8 @@ const Navbar = () => {
     });
   };
 
-
   return (
-    <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar">
+    <nav id="navigation" className="w-full flex py-6 justify-between items-center navbar bg-white">
       <h1 className="text-slate-800 text-[1rem] sm:text-[1.5rem] mr-20"><b>ad</b>CODE</h1>
       <a href="https://github.com/AdriannaLen" className="hide-on-mobile p-7">
         <img src={github} alt="github" className="w-10 h-10 object-contain" />
@@ -70,13 +66,13 @@ const Navbar = () => {
           onClick={handleToggle}
         />
         <div
-          className={`fixed top-0 right-0 w-full h-auto bg-slate-200 p-6 transition-transform duration-300 ${toggle ? 'translate-y-0' : '-translate-y-full'} z-40`}
+          className={`fixed top-0 left-0 w-full h-auto bg-white p-6 transition-transform duration-300 ${toggle ? 'translate-y-0' : '-translate-y-full'} z-40`}
         >
           <ul className="list-none flex flex-col justify-center items-center flex-1 h-full">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0 border-b' : 'mb-4 border-b'} border-slate-900 w-full text-center text-slate-700`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'} w-full text-center text-slate-700`}
               >
                 <a href={`#${nav.id}`} onClick={handleLinkClick}>
                   {nav.title}
@@ -92,11 +88,11 @@ const Navbar = () => {
           className="fixed bottom-6 right-6 p-3 rounded-full transition-colors duration-300 z-[100]"
           aria-label="Scroll to Top"
         >
-          <img src={scrollTop} alt="Scroll to Top" className="object-contain w-16 h-16" />
+          <img src={slideUp} alt="Scroll to Top" className="object-contain w-16 h-16" />
         </button>
       )}
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

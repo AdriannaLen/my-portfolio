@@ -3,9 +3,9 @@ import { navLinks } from '../constants'
 const Footer = () => {
   return (
     <>
-    <div className="bg-slate-200 text-center py-8 flex flex-col sm:flex-row justify-around border-t border-black">
+    <div className="bg-paleSky text-center py-8 flex flex-col sm:flex-row justify-around border-t border-black">
       <div className="font-poppins">Powered by <a href="https://www.qubit.cm/">qubit.cm</a></div>
-       <ul className="list-none sm:flex mx-8 justify-center items-center">
+       <ul className="list-none sm:flex justify-center items-center">
         {navLinks.map((nav) => (
           <li
             key={nav.id}
@@ -18,7 +18,7 @@ const Footer = () => {
         ))}
         </ul>
     </div>
-    <div className="font-poppins pb-8 bg-slate-200 text-center flex flex-col sm:flex-row justify-around sm:-ml-20">
+    <div className="font-poppins pb-8 bg-paleSky text-center flex flex-col sm:flex-row justify-around">
     <p>Copyright © 2022 <a href="https://www.adcode.it">adcode.it</a></p>
     <p>Polityka prywatności</p>
   </div>

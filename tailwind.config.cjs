@@ -5,10 +5,17 @@ export const theme = {
   extend: {
     
     colors: {
-      primary: "#00040f",
+      primary: "#F4C6B8",
       secondary: "#00f6ff",
+      white: "rgba(255, 255, 255)",
       dimWhite: "rgba(255, 255, 255, 0.7)",
       dimBlue: "rgba(9, 151, 124, 0.1)",
+       customBlue: '#5FA1C7',
+       coolGrey: "#91A1AB",
+       paleSky: "#CAD7DF",
+       dustyBlue: "#748DA6",
+       deepBlue: "#00274D",
+       lightPeach: "#F9F5E8"
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

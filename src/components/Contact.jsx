@@ -45,7 +45,7 @@ const Contact = () => {
             <input type="checkbox" className="mr-2" required />
             <label className="text-sm">Zgadzam się na <a href="#" className="text-blue-500">politykę prywatności</a></label>
           </div>
-          <button type="submit" className="w-full bg-slate-500 text-white p-3 rounded-lg font-bold hover:bg-slate-800 transition duration-300 mt-4">
+          <button type="submit" className="w-full bg-primary text-white p-3 rounded-lg font-bold hover:bg-slate-800 transition duration-300 mt-4">
             Wyślij
           </button>
         </form>
