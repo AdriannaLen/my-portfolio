@@ -17,7 +17,7 @@ const Footer = () => {
       
       {/* Środkowa kolumna - Logo */}
       <div className="flex justify-center items-center my-8 sm:my-0">
-        <div className="relative w-[8rem] h-[8rem] sm:w-[16rem] sm:h-[16rem] rounded-full border-[0.5rem] border-lightPeach bg-lightPeach flex justify-center items-center">
+        <div className="relative w-[8rem] h-[8rem] sm:w-[12rem] sm:h-[12rem] rounded-full border-[0.5rem] border-lightPeach bg-lightPeach flex justify-center items-center">
           <img
             src={logo}
             alt="Logo"

@@ -22,7 +22,7 @@ const Apps = () => {
                 <img
                   src={project.photo}
                   alt={project.title}
-                  className="mb-4 w-full h-50 object-cover"
+                  className="mb-4 w-full h-auto object-cover"
                 />
               </a>
             ) : (

@@ -104,7 +104,7 @@ const Navbar = () => {
           <img
             src={slideUp}
             alt="Scroll to Top"
-            className="object-contain w-16 h-16"
+            className="object-contain w-12 h-12"
           />
         </button>
       )}
