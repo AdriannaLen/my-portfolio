@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
-    <div className="bg-lightPeach text-text text-[1rem] sm:text-[1.5rem] border-t border-black py-8 flex flex-col sm:flex-row justify-around items-center">
+    <div className="bg-lightPeach text-text text-[1rem] border-t border-black py-8 flex flex-col sm:flex-row justify-around items-center">
       
       {/* Lewa kolumna - Powered by oraz Copyright */}
       <div className="flex flex-col items-center sm:items-start font-cormorantGaramond text-center sm:text-left">

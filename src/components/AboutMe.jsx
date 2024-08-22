@@ -15,15 +15,16 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="flex flex-col sd:flex-col sm:flex-col justify-center items-center sm:space-x-[1rem]">
-        <h1 className="text-[1.5rem] sm:text-[2.625rem] mb-4 uppercase tracking-wide text-brown transition-transform duration-500 animate-fadeIn">
+        <h1 className="text-[1.5rem] sm:text-[2.625rem] mb-4 mt-8 uppercase tracking-wide text-brown transition-transform duration-500 animate-fadeIn">
           Adrianna Lenczewska
         </h1>
         <div className="sm:block h-[1.5rem] sm:h-[2rem] mb-4 border-r-[0.2rem] sm:border-r-[0.25rem] border-text"></div>
         <h2 className="text-[1.5rem] sm:text-[2.625rem] mb-4 uppercase tracking-wide text-brown transition-transform duration-500 animate-fadeIn">
           Front End Developer
         </h2>
+        <div className="font-cormorantGaramond text-lightPeach text-[1rem] sm:text-[1.5rem] md:w-[30vw] w-full text-center items-center">
+        Passion for combining classic elegance with modern design, creating minimalist and aesthetic websites.</div>
       </div>
-
       <div className="w-full overflow-x-auto mt-[1rem]">
         <ul className="flex justify-center sm:justify-center pt-[1.5rem] sm:space-x-[2rem] animate-fadeIn">
           {technologies.map((tech) => (

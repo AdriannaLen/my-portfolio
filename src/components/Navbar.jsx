@@ -59,7 +59,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`transition-transform duration-300 hover:scale-105 font-font-cormorantGaramond font-normal cursor-pointer text-[1rem] sm:text-[1.5rem] ${
+            className={`transition-transform duration-300 hover:scale-105 font-font-cormorantGaramond font-normal cursor-pointer text-[1rem] ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             } text-text`}
           >

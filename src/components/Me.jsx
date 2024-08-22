@@ -10,7 +10,7 @@ const Me = () => {
       {/* Sekcja tekstowa */}
       <div className="mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-8 flex flex-col lg:items-start h-full w-auto lg:w-auto">
         <div className="flex-1">
-          <h2 className="font-cormorantGaramond ml-8 text-text sm:items-start items-center text-[1.5rem] sm:text-[2.5rem] lg:text-[3rem] tracking-wider">
+          <h2 className="font-cormorantGaramond ml-8 text-text sm:items-start items-center text-[1.5rem] sm:text-[1.5rem] lg:text-[3rem] tracking-wider">
             Get to know me a little
           </h2>
           <p className="font-cormorantGaramond mt-0 w-full sm:w-[70%] md:w-full lg:w-[60%] text-text text-[0.875rem] sm:text-[1rem] md:text-[1.5rem] lg:text-[1.5rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
