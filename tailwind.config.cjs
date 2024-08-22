@@ -19,7 +19,8 @@ export const theme = {
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
-      greatVibes: ["Great Vibes", "cursive"], 
+      greatVibes: ["Great Vibes", "cursive"],
+      cormorantGaramond: ["Cormorant Garamond", 'serif'],
     },
     
   },

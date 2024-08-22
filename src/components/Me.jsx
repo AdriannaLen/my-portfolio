@@ -8,12 +8,12 @@ const Me = () => {
       <div className="hidden sm:block absolute h-full w-[0.125rem] bg-slate-600 left-[1.5rem] sm:left-[12rem] lg:left-[15%] top-0"></div>
 
       {/* Sekcja tekstowa */}
-      <div className="mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-0 flex flex-col lg:items-start h-full w-full lg:w-auto">
+      <div className="mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-8 flex flex-col lg:items-start h-full w-auto lg:w-auto">
         <div className="flex-1">
-          <h2 className="font-greatVibes text-text sm:items-start items-center text-[3rem] sm:text-[2.5rem] lg:text-[3rem] tracking-wider">
+          <h2 className="font-cormorantGaramond ml-8 text-text sm:items-start items-center text-[1.5rem] sm:text-[2.5rem] lg:text-[3rem] tracking-wider">
             Get to know me a little
           </h2>
-          <p className="font-poppins mt-0 w-full sm:w-[70%] md:w-full lg:w-[60%] text-text text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.125rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
+          <p className="font-cormorantGaramond mt-0 w-full sm:w-[70%] md:w-full lg:w-[60%] text-text text-[0.875rem] sm:text-[1rem] md:text-[1.5rem] lg:text-[1.5rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
             I'm an experienced subcontracting buyer with 7 years of experience
             within international organization. This role honed my negotiation
             skills, relationship management, and precise planning abilities as
@@ -27,16 +27,16 @@ const Me = () => {
           </p>
         </div>
         <div className="flex-1">
-          <h2 className="font-poppins mt-0 w-full sm:w-[70%] md:w-full lg:w-[60%] text-text text-[0.875rem] sm:text-[1rem] md:text-[1.125rem] lg:text-[1.125rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
+          <h2 className="font-cormorantGaramond mt-0 w-full sm:w-[70%] md:w-full lg:w-[60%] text-text text-[0.875rem] sm:text-[1rem] md:text-[1.5rem] lg:text-[1.5rem] leading-relaxed space-y-[1rem] p-[1.5rem] rounded-lg">
             Graduated Kazimierz Wielki University and Software Development
             Academy as a Front-End Developer
           </h2>
         </div>
         <button
           type="submit"
-          className="w-auto inline-block bg-lightCoral text-white p-4 rounded-2xl font-bold  hover:text-brown hover:bg-primary transition duration-300 mt-32 text-sm sm:text-base"
+          className="w-auto self-start font-cormorantGaramond bg-lightCoral text-white p-4 rounded-2xl font-bold  hover:text-brown hover:bg-primary transition duration-300 mt-32 ml-8 sm:text-[1.5rem] text-[1rem]"
         >
-          <a href="#contact">Want to get in touch? Click</a>
+          <a href="#contact">Work with me</a>
         </button>
       </div>
 

@@ -10,13 +10,13 @@ const Contact = () => {
       <div className="flex flex-col sm:flex-row justify-between items-start w-full max-w-6xl p-4 sm:p-8">
         {/* Dane kontaktowe */}
         <div className="w-full sm:w-1/2 flex-shrink-0 text-start mt-8 sm:mt-0 relative">
-          <div className="p-8 font-poppins bg-white h-full text-lg relative z-10 sm:-translate-y-[15%]">
+          <div className="p-8 font-cormorantGaramond bg-white h-full text-lg relative z-10 sm:-translate-y-[15%]">
             <p className="mb-5 text-[3rem]">Contact</p>
-            <p className="mb-2">Adrianna Lenczewska</p>
-            <p className="mb-2">ul.Gdańska, Więcbork 89-410</p>
-            <p className="mb-2">+48 669 961 266</p>
-            <p className="mb-2">adriannalenn@gmail.com</p>
-            <p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">Adrianna Lenczewska</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ul.Gdańska, Więcbork 89-410</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">+48 669 961 266</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">adriannalenn@gmail.com</p>
+            <p className="sm:text-[1.5rem] text-[1rem]">
               Anything you'd like to ask about? Please contact me using the form
               !
             </p>
