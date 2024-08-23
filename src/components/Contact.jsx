@@ -42,15 +42,13 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-white min-h-screen sm:min-h-[70vh] flex justify-center items-center relative py-16"
+      className="bg-white min-h-screen sm:min-h-[70vh] flex justify-center items-center relative py-16 overflow-x-hidden"
     >
       <div className="flex flex-col sm:flex-row justify-between items-start w-full max-w-6xl p-4 sm:p-8">
         {/* Dane kontaktowe */}
         <div
           className={`w-full sm:w-1/2 flex-shrink-0 text-start mt-8 sm:mt-0 relative transition-transform duration-700 ease-out ${
-            isContactVisible
-              ? "transform translate-x-0"
-              : "transform -translate-x-full"
+            isContactVisible ? "translate-x-0 opacity-100 visible" : "-translate-x-full opacity-0 invisible"
           }`}
         >
           <div className="p-8 font-cormorantGaramond bg-white h-full text-lg relative z-10 sm:-translate-y-[15%]">
@@ -95,9 +93,7 @@ const Contact = () => {
         {/* Formularz kontaktowy */}
         <div
           className={`w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative z-10 transition-transform duration-700 ease-out ${
-            isFormVisible
-              ? "transform translate-x-0"
-              : "transform translate-x-full"
+            isFormVisible ? "translate-x-0 opacity-100 visible" : "translate-x-full opacity-0 invisible"
           } sm:mr-8 lg:mr-[25%]`}
         >
           <form className="bg-lightPeach p-8 border w-full h-auto relative">

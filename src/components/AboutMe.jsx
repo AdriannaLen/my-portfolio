@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';  // Poprawiony import logo
 
 const AboutMe = () => {
   return (
-    <div className="min-h-[80vh] font-cormorantGaramond serif relative flex-col w-full flex justify-center bg-paleSky">
+    <div className="min-h-[80vh] font-cormorantGaramond serif relative flex-col w-full flex justify-center bg-paleSky bg-cover">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="relative w-[8rem] h-[8rem] sm:w-[14rem] sm:h-[14rem] rounded-full border-[0.5rem] border-lightPeach bg-paleSky flex justify-center items-center">
           {/* Dodaj logo jako obraz */}

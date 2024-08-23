@@ -2,7 +2,7 @@ import { projects } from "../constants";
 
 const Apps = () => {
   return (
-    <div id="projects" className="min-h-[100vh] mx-auto p-4 bg-paleSky">
+    <div id="projects" className="min-h-auto mx-auto p-4 bg-paleSky">
       <h2 className="font-cormorantGaramond font-semibold text-text uppercase text-[1.5rem] sm:text-[2rem] m-16 text-center tracking-wider">
         my projects
       </h2>
