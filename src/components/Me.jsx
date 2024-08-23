@@ -1,4 +1,24 @@
+import React, { useState, useEffect } from 'react';
+
 const Me = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById('me');
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.1) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div
       id="me"
@@ -8,7 +28,11 @@ const Me = () => {
       <div className="hidden sm:block absolute h-full w-[0.125rem] bg-slate-600 left-[1.5rem] sm:left-[12rem] lg:left-[15%] top-0"></div>
 
       {/* Sekcja tekstowa */}
-      <div className="mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-8 flex flex-col lg:items-start h-full w-auto lg:w-auto">
+      <div
+        className={`mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-8 flex flex-col lg:items-start h-full w-auto lg:w-auto transition-transform duration-700 ease-out ${
+          isVisible ? 'transform translate-x-0' : 'transform -translate-x-full'
+        }`}
+      >
         <div className="flex-1">
           <h2 className="font-cormorantGaramond ml-8 text-text font-semibold sm:items-start items-center text-[1.5rem] sm:text-[1.5rem] lg:text-[2rem] tracking-wider">
             Get to know me a little
@@ -34,7 +58,7 @@ const Me = () => {
         </div>
         <button
           type="submit"
-          className="w-auto self-start font-cormorantGaramond bg-lightCoral text-white p-4 rounded-2xl font-bold  hover:text-brown hover:bg-primary transition duration-300 mt-32 ml-8 sm:text-[1.5rem] text-[1rem]"
+          className="w-auto self-start font-cormorantGaramond bg-lightCoral text-white p-4 rounded-2xl font-bold hover:text-brown hover:bg-primary transition duration-300 mt-32 ml-8 sm:text-[1.5rem] text-[1rem]"
         >
           <a href="#contact">Work with me</a>
         </button>
