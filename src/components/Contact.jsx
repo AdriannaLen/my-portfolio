@@ -15,7 +15,7 @@ const Contact = () => {
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">Adrianna Lenczewska</p>
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ul.Gdańska, Więcbork 89-410</p>
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">+48 669 961 266</p>
-            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">adriannalenn@gmail.com</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ada.lenczewska@adcode.it</p>
             <p className="sm:text-[1.5rem] text-[1rem]">
               Anything you'd like to ask about? Please contact me using the form
               !
