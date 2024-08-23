@@ -12,11 +12,18 @@ const Contact = () => {
       const contactRect = contactSection.getBoundingClientRect();
       const formRect = contactSection.querySelector('form').getBoundingClientRect();
 
-      if (contactRect.top < window.innerHeight * 0.75) {
+      // Animacja w momencie przewinięcia na sekcję "Contact"
+      if (contactRect.top < window.innerHeight * 0.75 && contactRect.bottom > 0) {
         setIsContactVisible(true);
+      } else {
+        setIsContactVisible(false);
       }
-      if (formRect.top < window.innerHeight * 0.75) {
+
+      // Animacja w momencie przewinięcia na formularz
+      if (formRect.top < window.innerHeight * 0.75 && formRect.bottom > 0) {
         setIsFormVisible(true);
+      } else {
+        setIsFormVisible(false);
       }
     };
 
