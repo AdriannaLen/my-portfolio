@@ -79,13 +79,13 @@ const Navbar = () => {
             toggle ? "translate-y-0" : "-translate-y-full"
           } z-40`}
         >
-          <ul className="list-none flex flex-col justify-center items-center flex-1 h-full">
+          <ul className="list-none flex flex-col justify-start flex-1 h-full">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-cormorantGaramond cursor-pointer text-[16px] ${
                   index === navLinks.length - 1 ? "mb-0" : "mb-4"
-                } w-full text-center text-text`}
+                } w-full text-text`}
               >
                 <a href={`#${nav.id}`} onClick={handleLinkClick}>
                   {nav.title}
