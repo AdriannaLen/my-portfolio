@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 
@@ -46,7 +46,7 @@ const Contact = () => {
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">+48 669 961 266</p>
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ada.lenczewska@adcode.it</p>
             <p className="sm:text-[1.5rem] text-[1rem]">
-              Anything you'd like to ask about? Please contact me using the form!
+              Anything you would like to ask about? Please contact me using the form!
             </p>
             <span className="flex flex-row justify-start py-6">
               <a href="https://github.com/AdriannaLen" className="hide-on-mobile">
