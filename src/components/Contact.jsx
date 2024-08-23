@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
 
@@ -8,12 +8,17 @@ const Contact = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const contactSection = document.getElementById('contact');
+      const contactSection = document.getElementById("contact");
       const contactRect = contactSection.getBoundingClientRect();
-      const formRect = contactSection.querySelector('form').getBoundingClientRect();
+      const formRect = contactSection
+        .querySelector("form")
+        .getBoundingClientRect();
 
       // Animacja w momencie przewinięcia na sekcję "Contact"
-      if (contactRect.top < window.innerHeight * 0.75 && contactRect.bottom > 0) {
+      if (
+        contactRect.top < window.innerHeight * 0.75 &&
+        contactRect.bottom > 0
+      ) {
         setIsContactVisible(true);
       } else {
         setIsContactVisible(false);
@@ -27,10 +32,10 @@ const Contact = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -43,23 +48,42 @@ const Contact = () => {
         {/* Dane kontaktowe */}
         <div
           className={`w-full sm:w-1/2 flex-shrink-0 text-start mt-8 sm:mt-0 relative transition-transform duration-700 ease-out ${
-            isContactVisible ? 'transform translate-x-0' : 'transform -translate-x-full'
+            isContactVisible
+              ? "transform translate-x-0"
+              : "transform -translate-x-full"
           }`}
         >
           <div className="p-8 font-cormorantGaramond bg-white h-full text-lg relative z-10 sm:-translate-y-[15%]">
             <p className="mb-5 text-[3rem]">Contact</p>
-            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">Adrianna Lenczewska</p>
-            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ul.Gdańska, Więcbork 89-410</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">
+              Adrianna Lenczewska
+            </p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">
+              ul.Gdańska, Więcbork 89-410
+            </p>
             <p className="mb-2 sm:text-[1.5rem] text-[1rem]">+48 669 961 266</p>
-            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">ada.lenczewska@adcode.it</p>
+            <p className="mb-2 sm:text-[1.5rem] text-[1rem]">
+              ada.lenczewska@adcode.it
+            </p>
             <p className="sm:text-[1.5rem] text-[1rem]">
-              Anything you would like to ask about? Please contact me using the form!
+              Anything you would like to ask about? Please contact me using the
+              form!
             </p>
             <span className="flex flex-row justify-start py-6">
-              <a href="https://github.com/AdriannaLen" className="hide-on-mobile">
-                <img src={github} alt="github" className="object-contain w-[2.75rem]" />
+              <a
+                href="https://github.com/AdriannaLen"
+                className="hide-on-mobile"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="object-contain w-[2.75rem]"
+                />
               </a>
-              <a href="https://www.linkedin.com/in/adrianna-lenczewska-276185287/" className="hide-on-mobile">
+              <a
+                href="https://www.linkedin.com/in/adrianna-lenczewska-276185287/"
+                className="hide-on-mobile"
+              >
                 <img src={linkedin} alt="linkedin" className="object-contain" />
               </a>
             </span>
@@ -71,7 +95,9 @@ const Contact = () => {
         {/* Formularz kontaktowy */}
         <div
           className={`w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative z-10 transition-transform duration-700 ease-out ${
-            isFormVisible ? 'transform translate-x-0' : 'transform translate-x-full'
+            isFormVisible
+              ? "transform translate-x-0"
+              : "transform translate-x-full"
           } sm:mr-8 lg:mr-[25%]`}
         >
           <form className="bg-lightPeach p-8 border w-full h-auto relative">
@@ -85,7 +111,11 @@ const Contact = () => {
             </div>
             <div className="flex flex-col mt-4">
               <label className="mb-2 text-sm font-medium">Message</label>
-              <textarea className="p-3 border rounded-lg" rows="4" required></textarea>
+              <textarea
+                className="p-3 border rounded-lg"
+                rows="4"
+                required
+              ></textarea>
             </div>
             <div className="flex items-center mt-4">
               <input type="checkbox" className="mr-2" required />

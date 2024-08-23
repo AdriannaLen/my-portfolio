@@ -1,21 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Me = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const section = document.getElementById('me');
+      const section = document.getElementById("me");
       const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.1) {
+
+      // Sprawdzenie czy sekcja jest widoczna na ekranie
+      if (rect.top < window.innerHeight * 0.75 && rect.bottom > 0) {
         setIsVisible(true);
+      } else {
+        setIsVisible(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -30,7 +34,7 @@ const Me = () => {
       {/* Sekcja tekstowa */}
       <div
         className={`mt-[8rem] sm:ml-[14rem] lg:ml-[20%] md:ml-8 flex flex-col lg:items-start h-full w-auto lg:w-auto transition-transform duration-700 ease-out ${
-          isVisible ? 'transform translate-x-0' : 'transform -translate-x-full'
+          isVisible ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
       >
         <div className="flex-1">
