@@ -5,19 +5,12 @@ const Alert = ({ message, onClose }) => {
 
   return (
     <div
-      className="fixed top-12 align-middle p-4 mb-4 text-sm rounded-lg"
-      style={{
-        backgroundColor: "#ede9e3",
-        color: "#4B3621",
-      }}
+      className="fixed top-12 align-middle p-4 mb-4 text-sm rounded-lg bg-lightPeach text-brown"
       role="alert"
     >
       <span className="font-medium">Success alert!</span> {message}
       <button
-        className="ml-4 font-bold"
-        style={{
-          color: "#4B3621",
-        }}
+        className="ml-4 font-bold text-brown"
         onClick={onClose}
       >
         X
