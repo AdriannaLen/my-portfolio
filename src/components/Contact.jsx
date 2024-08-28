@@ -115,12 +115,12 @@ const Contact = () => {
             </div>
             <div className="flex items-center mt-4">
               <input type="checkbox" className="mr-2" required />
-              <label className="text-sm">
+              {/* <label className="text-sm">
                 Zgadzam się na{" "}
                 <a href="#" className="text-text">
                   politykę prywatności
                 </a>
-              </label>
+              </label> */}
             </div>
             <button
               type="submit"
