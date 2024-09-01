@@ -5,7 +5,7 @@ const Alert = ({ message, onClose }) => {
 
   return (
     <div
-      className="fixed top-12 align-middle p-4 mb-4 text-sm rounded-lg bg-lightPeach text-brown"
+      className="fixed top-12 align-middle p-4 mb-4 text-sm rounded-lg bg-paleSky text-brown z-10000"
       role="alert"
     >
       <span className="font-medium">Success alert!</span> {message}

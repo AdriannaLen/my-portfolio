@@ -123,7 +123,7 @@ const Contact = () => {
         <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 left-[15%] sm:left-[15%] lg:left-[15%] top-0"></div>
 
         <div
-          className={`w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative z-10 transition-transform duration-700 ease-out ${
+          className={`w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative transition-transform duration-700 ease-out ${
             isFormVisible ? "translate-x-0 opacity-100 visible" : "translate-x-full opacity-0 invisible"
           } sm:mr-8 lg:mr-[25%]`}
         >
