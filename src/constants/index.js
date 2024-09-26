@@ -1,5 +1,6 @@
-import employeeAppImage from '../assets/employee-app.svg'
-import letsPackImage from '../assets/lets-pack.jpg'
+import mockUp1 from '../assets/mockup1.webp'
+import mockUp2 from '../assets/mockUp2.webp'
+import mockUp3 from '../assets/mockUp3.webp'
 import css from '../assets/css.svg'
 import html from '../assets/html.svg'
 import sass from '../assets/sass.svg'
@@ -7,7 +8,7 @@ import react from '../assets/react.svg'
 import typescript from '../assets/typescript.svg'
 import javascript from '../assets/javascript.svg'
 import tailwind from '../assets/tailwind.svg'
-import qubit from '../assets/qubit.png'
+
 
 export const navLinks = [
    
@@ -38,19 +39,19 @@ export const navLinks = [
       id: "project3",
       title: "Qubit",
       link: "www.qubit.cm",
-      photo: qubit
+      photo: mockUp1
   },
     {
         id: "project1",
         title: "Employeee Management System",
         link: "employee-app-three.vercel.app",
-        photo: employeeAppImage
+        photo: mockUp2
     },
     {
         id: "project2",
         title: "Far Away",
         link: "lets-pack-pi.vercel.app",
-        photo:letsPackImage
+        photo: mockUp3
     },
   ]
 

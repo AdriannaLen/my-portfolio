@@ -10,7 +10,7 @@ const Apps = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative p-6 bg-gradient-to-b from-lightPeach to-paleSky rounded-xl border-4 border-gray-600"
+            className="relative p-6 rounded-xl"
           >
             {project.link ? (
               <a
