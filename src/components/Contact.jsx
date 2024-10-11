@@ -146,7 +146,7 @@ const Contact = () => {
         <div className="hidden sm:block absolute h-full w-0.5 bg-slate-600 left-[15%] sm:left-[15%] lg:left-[15%] top-0"></div>
 
         <div
-          className={`w-full sm:w-1/2 mt-[20vh] sm:mt-0 flex-shrink-0 relative transition-transform duration-700 ease-out ${
+          className={`w-full sm:w-1/2 mt-8 sm:mt-0 flex-shrink-0 relative transition-transform duration-700 ease-out ${
             isFormVisible
               ? "translate-x-0 opacity-100 visible"
               : "translate-x-full opacity-0 invisible"
@@ -154,7 +154,7 @@ const Contact = () => {
         >
           <form
             onSubmit={onSubmit}
-            className="bg-lightPeach p-8 border w-full h-auto relative"
+            className="bg-lightPeach p-4 sm:p-8 border w-full h-auto relative"
           >
             <div className="flex flex-col mt-6">
               <label className="mb-2 text-sm font-medium">Name</label>

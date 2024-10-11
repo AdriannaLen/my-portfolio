@@ -3,14 +3,14 @@ import { projects } from "../constants";
 const Apps = () => {
   return (
     <div id="projects" className="min-h-auto mx-auto p-4 bg-paleSky">
-      <h2 className="font-cormorantGaramond font-semibold text-text uppercase text-[1.5rem] sm:text-[2rem] m-16 text-center tracking-wider">
+      <h2 className="font-cormorantGaramond font-semibold text-text uppercase text-[1.5rem] sm:text-[2rem] m-2 sm:m-8 text-center tracking-wider">
         my projects
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative p-6 rounded-xl"
+            className="relative p-3 sm:p-6 rounded-xl"
           >
             {project.link ? (
               <a
