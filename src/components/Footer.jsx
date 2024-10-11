@@ -20,7 +20,7 @@ const Footer = () => {
       {/* Lewa kolumna - Powered by oraz Copyright */}
       <div className="flex flex-col items-center sm:items-start font-cormorantGaramond text-center sm:text-left">
         <div>
-          Powered by <a href="https://www.qubit.cm/">qubit.cm</a>
+          Powered by <a href="https://www.qubit.cm/">qubit.cm</a> | <a href="https://www.qubity.pl/">qubity.pl</a>
         </div>
         <div className="mt-4">
           <a href="#" onClick={handlePrivacyPolicyClick}>Polityka Prywatności</a>
